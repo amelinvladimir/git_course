@@ -4,6 +4,7 @@
 
 ## Скачать проект
 Получаем адрес для скачивания:
+![image](https://github.com/user-attachments/assets/767a19fe-17d6-4686-98c6-0cf187b8aa90)
 
 
 ### Команды git командной строки
@@ -15,15 +16,23 @@ git clone git@github.com:amelinvladimir/git_course.git
 cd git_course # переходим в папку с проектом
 ```
 
-Создать ветку и переключиться на нее
-Команды git командной строки
+## Создать ветку и переключиться на нее
+### Команды git командной строки
+```console
 #  создаем новую ветку
 git branch IDVP-555
 
 # переключаемся в новую ветку
 git checkout IDVP-555
+```
 
-Plugin git vscode
+### Plugin git vscode
+![image](https://github.com/user-attachments/assets/1f16de2f-05b1-45b6-90e9-d739113ac34f)
+Указываем от какой ветки делаем ответвление
+![image](https://github.com/user-attachments/assets/1060cbde-0fe3-4317-b9c6-93f114bb1156)
+Указываем название новой ветки
+![image](https://github.com/user-attachments/assets/5f83396f-1d05-46fd-a1e9-00b6c3f26144)
+
 
 
 Если нужно срочно переключиться на другую ветку, а в рабочей есть не закоммиченные изменения
