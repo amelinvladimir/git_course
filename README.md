@@ -26,6 +26,19 @@ git branch IDVP-555
 git checkout IDVP-555
 ```
 
+## Шаг 3. Скачать еще одну ветку из внешнего репозитория
+
+Чтобы скачать ветку developer из внешнего репозитория и переключиться на нее выполняем команды:
+```console
+# скачиваем ветку developer
+git checkout -b developer origin/developer
+branch 'developer' set up to track 'origin/developer'.
+Переключились на новую ветку «developer»
+
+# переключаемся на ветку developer
+git checkout developer
+```
+
 ### Plugin git vscode
 ![image](https://github.com/user-attachments/assets/1f16de2f-05b1-45b6-90e9-d739113ac34f)
 Указываем от какой ветки делаем ответвление
