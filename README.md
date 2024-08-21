@@ -16,17 +16,7 @@ git clone git@github.com:amelinvladimir/git_course.git
 cd git_course # переходим в папку с проектом
 ```
 
-## Шаг 2. Создать ветку и переключиться на нее
-### Команды git командной строки
-```console
-# создаем новую ветку
-git branch IDVP-555
-
-# переключаемся в новую ветку
-git checkout IDVP-555
-```
-
-## Шаг 3. Скачать еще одну ветку из внешнего репозитория
+### Скачать еще одну ветку из внешнего репозитория
 
 Чтобы скачать ветку developer из внешнего репозитория и переключиться на нее выполняем команды:
 ```console
@@ -37,6 +27,16 @@ branch 'developer' set up to track 'origin/developer'.
 
 # переключаемся на ветку developer
 git checkout developer
+```
+
+## Шаг 2. Создать ветку и переключиться на нее
+### Команды git командной строки
+```console
+# создаем новую ветку
+git branch IDVP-555
+
+# переключаемся в новую ветку
+git checkout IDVP-555
 ```
 
 ### Plugin git vscode
