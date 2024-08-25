@@ -154,6 +154,43 @@ Fast-forward
  create mode 100644 README.md
 ```
 
+Теперь сделаем в одном файле пересекающиеся изменения в 2 ветках, а затем перенесем изменения из одной ветки в другую. 
+
+Для этого сначала переходим в ветку main. 
+```console
+git checkout main
+```
+
+И меняем содержимое файла model4.sql с
+```console
+select 4;
+```
+
+на 
+
+```console
+select 4;
+# come comment 2
+```
+то есть мы добавили в файл model4.sql комментарий в последней строке.
+
+сохраняем коммит
+```console
+git add model4.sql
+git commit -m ''
+```
+
+```console
+```
+
+```console
+```
+
+```console
+```
+
+```console
+```
 
 
 #### Plugin git vscode
