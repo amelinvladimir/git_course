@@ -169,14 +169,14 @@ select 4;
 на:
 ```console
 select 4;
-# come comment 2
+# some comment 1
 ```
 то есть мы добавили в файл model4.sql комментарий в последней строке.
 
 сохраняем коммит:
 ```console
 git add model4.sql
-git commit -m 'added comment 2 to model4'
+git commit -m 'added comment 1 to model4'
 ```
 
 ```console
