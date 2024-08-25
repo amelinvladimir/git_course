@@ -179,18 +179,68 @@ git add model4.sql
 git commit -m 'added comment 1 to model4'
 ```
 
+Переключаемся на ветку IDVP-555
 ```console
+git checkout IDVP-555
+```
+Меняем содержимое файла model4.sql с 
+```console
+select 4;
 ```
 
+на
 ```console
+select 4;
+# some comment 2
 ```
 
+сохраняем коммит:
 ```console
+git add model4.sql
+git commit -m 'added comment 2 to model4'
 ```
 
+переносим изменения из ветки main в ветку IDVP-555:
 ```console
+git merge main
 ```
 
+и видим сообщение о появившемся конфликте, который нужно разрешить:
+```console
+Автослияние model4.sql
+КОНФЛИКТ (содержимое): Конфликт слияния в model4.sql
+Сбой автоматического слияния; исправьте конфликты, затем зафиксируйте результат.
+```
+
+Открываем на редактирование файл model4.sql, чтобы разрешить конфликт:
+```console
+nano model4.sql
+```
+
+Меняем содержимое с:
+```console
+select 4;
+<<<<<<< HEAD
+# some comment 2
+=======
+# some comment 1
+>>>>>>> main
+```
+
+на следующее и сохраняем:
+```console
+select 4;
+# some comment 1
+# some comment 2
+```
+
+Формируем коммит с файлом с разрешенным конфликтом:
+ ```console
+ git add model4.sql
+ git commit
+ ```
+
+ Перенос изменений из ветки main в ветку developer успешно завершен.
 
 #### Plugin git vscode
 
