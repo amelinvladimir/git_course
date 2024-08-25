@@ -156,28 +156,27 @@ Fast-forward
 
 Теперь сделаем в одном файле пересекающиеся изменения в 2 ветках, а затем перенесем изменения из одной ветки в другую. 
 
-Для этого сначала переходим в ветку main. 
+Для этого сначала переходим в ветку main:
 ```console
 git checkout main
 ```
 
-И меняем содержимое файла model4.sql с
+Меняем содержимое файла model4.sql:
 ```console
 select 4;
 ```
 
-на 
-
+на:
 ```console
 select 4;
 # come comment 2
 ```
 то есть мы добавили в файл model4.sql комментарий в последней строке.
 
-сохраняем коммит
+сохраняем коммит:
 ```console
 git add model4.sql
-git commit -m ''
+git commit -m 'added comment 2 to model4'
 ```
 
 ```console
