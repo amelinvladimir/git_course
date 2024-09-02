@@ -255,7 +255,7 @@ select 4;
 
 
 
-## Отправить свою рабочую ветку во внешний репозиторий и создать merge request:
+## Шаг 5. Отправить свою рабочую ветку во внешний репозиторий и создать merge request:
 
 ### Команды git командной строки
 Проверяем, что находимся в ветке IDVP-555
@@ -300,10 +300,12 @@ branch 'IDVP-555' set up to track 'origin/IDVP-555'.
 
 
 
+## Шаг 6. Создать merge request
 
-Создать merge request
-Команды git командной строки
+Открыть страницу проекта в git:
+![iScreen Shoter - Google Chrome - 240902192927](https://github.com/user-attachments/assets/73420ff0-d30e-4a0b-9528-5d46b09d6f75)
 
-Plugin git vscode
+Там вы увидите предложение создать merge request:
+![iScreen Shoter - Google Chrome - 240902193053](https://github.com/user-attachments/assets/430e667c-6f0f-4017-a692-24062692f0fa)
 
 
