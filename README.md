@@ -252,6 +252,7 @@ select 4;
 Перенос изменений из ветки main в ветку IDVP-555 успешно завершен.
 
 ### Plugin git vscode
+![iScreen Shoter - Code - 240902193955](https://github.com/user-attachments/assets/e9057826-1c4b-4923-be04-d4aa283b4823)
 
 
 
