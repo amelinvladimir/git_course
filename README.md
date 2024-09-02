@@ -147,7 +147,7 @@ git stash pop
 ## Шаг 4. В рабочую ветку накатить коммиты из основной, если в рабочей ветке все закоммичено
 Пока мы в своей ветке IDVP-555 делали свою задачу, наши коллеги добавили коммитов в базовую ветку main (обычно надо брать коммиты из developer). Теперь нам надо перенести эти коммиты в свою ветку. Возможны 2 варианты - изменения коллег и наши изменеия - будут или не будут пересекаться.
 
-#### Команды git командной строки
+### Команды git командной строки
 Убеждаемся, что мы в ветке IDVP-555
 ```console
 git branch
@@ -251,7 +251,7 @@ select 4;
 
 Перенос изменений из ветки main в ветку IDVP-555 успешно завершен.
 
-#### Plugin git vscode
+### Plugin git vscode
 
 
 
@@ -293,7 +293,12 @@ branch 'IDVP-555' set up to track 'origin/IDVP-555'.
 
 Переходим по указанной в сообщении ссылке (https://github.com/amelinvladimir/git_course/pull/new/IDVP-555), чтобы создать merge request.
 
-Plugin git vscode
+### Plugin git vscode
+![iScreen Shoter - Code - 240902192701](https://github.com/user-attachments/assets/3eb0d840-35a3-4f31-a29a-1b77734794c2)
+
+![iScreen Shoter - Code - 240902192748](https://github.com/user-attachments/assets/3407f051-7047-4113-93dd-ffbe8d632168)
+
+
 
 
 Создать merge request
