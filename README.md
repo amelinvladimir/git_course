@@ -220,11 +220,7 @@ nano model4.sql
 Меняем содержимое с:
 ```console
 select 4;
-<<<<<<< HEAD
-# some comment 2
-=======
 # some comment 1
->>>>>>> main
 ```
 
 на следующее и сохраняем:
@@ -240,14 +236,49 @@ select 4;
  git commit
  ```
 
- Перенос изменений из ветки main в ветку developer успешно завершен.
+Перенос изменений из ветки main в ветку IDVP-555 успешно завершен.
 
 #### Plugin git vscode
 
 
 
-В рабочую ветку накатить коммиты из основной, если в рабочей ветке не все закоммичено
-Команды git командной строки
+## Отправить свою рабочую ветку во внешний репозиторий и создать merge request:
+
+### Команды git командной строки
+Проверяем, что находимся в ветке IDVP-555
+```console
+git branch
+
+* IDVP-555
+  main
+```
+
+Если находимся не в IDVP-555, то переключаемся на нее командой:
+```console
+git checkout IDVP-555
+```
+
+Публикуем рабочую ветку IDVP-555 в gitlab
+```console
+git push --set-upstream origin IDVP-555
+
+Перечисление объектов: 46, готово.
+Подсчет объектов: 100% (46/46), готово.
+При сжатии изменений используется до 8 потоков
+Сжатие объектов: 100% (38/38), готово.
+Запись объектов: 100% (43/43), 5.25 КиБ | 1.05 МиБ/с, готово.
+Всего 43 (изменений 15), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (15/15), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'IDVP-555' on GitHub by visiting:
+remote:      https://github.com/amelinvladimir/git_course/pull/new/IDVP-555
+remote: 
+To github.com:amelinvladimir/git_course.git
+ * [new branch]      IDVP-555 -> IDVP-555
+branch 'IDVP-555' set up to track 'origin/IDVP-555'.
+```
+
+Переходим по указанной в сообщении ссылке (https://github.com/amelinvladimir/git_course/pull/new/IDVP-555), чтобы создать merge request.
 
 Plugin git vscode
 
