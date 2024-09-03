@@ -232,8 +232,11 @@ nano model4.sql
 
 Меняем содержимое с:
 ```console
-select 4;
+<<<<<<< HEAD
+# some comment 2
+=======
 # some comment 1
+>>>>>>> main
 ```
 
 на следующее и сохраняем:
